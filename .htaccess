@@ -1,0 +1,11 @@
+Options Indexes FollowSymLinks
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+DirectoryIndex index.php
+php_value date.timezone 'Europe/Zaporozhye'
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.*)$ index.php [QSA]
+
+php_value post_max_size 50M

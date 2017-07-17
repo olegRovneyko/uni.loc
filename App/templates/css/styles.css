@@ -1,0 +1,178 @@
+.top-indent {
+	margin-top: 20px;
+}
+#newOrder form#addOrder div.control-group.pull-left,
+#newOrder form#addOrder div.control-group.pull-right,
+#oneOrder form#editOrder div.control-group.pull-left,
+#oneOrder form#editOrder div.control-group.pull-right,
+#newPerformer form#addPerformer div.control-group.pull-left,
+#newPerformer form#addPerformer div.control-group.pull-right,
+form#editPerformer div.control-group.pull-left,
+form#editPerformer div.control-group.pull-right,
+form#addClient div.control-group.pull-left,
+form#addClient div.control-group.pull-right,
+form#editClient div.control-group.pull-left,
+form#editClient div.control-group.pull-right {
+	width: 49%;
+}
+
+div.preview {
+	margin-top: 25px;
+}
+
+div.preview img {
+	min-width: 100%;
+}
+
+.top-indent {
+	margin-top: 25px;
+}
+
+table tr th,
+table tr td {
+	text-align: center;
+}
+div.hint {
+	background-image: url('../img/orders/noimage.png');
+	background-color: violet;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 1px solid violet;
+	border-radius: 5px;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	right: -150px;
+	top: -60px;
+	opacity: .5;
+}
+div.hint div.arrow-image {
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-right: 10px solid violet;
+	left: -20px;
+	top: 70px;
+}
+.panel.panel-default form#filter {
+	background-image: url('../img/nice_snow.png');
+	margin-bottom: 0;
+}
+.modal-dialog .modal-content .modal-header,
+.modal-dialog .modal-content .modal-footer {
+	background-image: url('../img/nice_snow.png');
+}
+form#filter {
+	text-align: center;
+}
+div.new-order,
+div.new-client,
+div.new-performer {
+	text-align: center;
+}
+
+label.error {
+	color: red;
+}
+
+body {
+	padding-bottom: 80px;
+}
+
+div.panel.panel-default.preview {
+	overflow: hidden;
+}
+
+div.panel.panel-default.preview img:hover {
+	transform: scale(1.5, 1.5);
+	//transform-origin: left top;
+}
+
+div.panel.panel-default.preview img {
+	transition: all 2s;
+	position: relative;
+	z-index: 100;
+	cursor: pointer;
+}
+
+#radioBtn .notActive {
+	color: #3276b1;
+	background-color: #fff;
+}
+
+ /* Кнопка вверх */
+#scrollup {
+	position: fixed; /* фиксированная позиция */
+	opacity: 0.8; /* прозрачность */
+	padding: 5px 5px; /* отступы */
+	background: #ccc;
+	border-radius: 5px; /* скругление углов */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	right: 0px; /* отступ слева */
+	bottom: 0px; /* отступ снизу */
+	display: none; /* спрятать блок */
+	cursor: pointer;
+	z-index: 1050;
+}
+
+@page {
+	size: landscape;
+}
+@media print {
+	table {
+		width: 100%;
+	}
+	table input {
+		display: none;
+	}
+	.panel.panel-default.top-indent {
+		display: none;
+	}
+	button.btn {
+		display: none;
+	}
+	a[href]:after {
+    content: "";
+  }
+  .container {
+  	width: 100%;
+  }
+  body {
+  	margin: 1cm;
+  }
+}
+// ---------for print
+@page { 
+	size: landscape;
+}
+@media print {
+	table {
+		width: 100%;
+	}
+	table input {
+		display: none;
+	}
+  .panel-heading {
+  	display: none;
+  }
+	.panel.panel-default.top-indent {
+		display: none;
+	}
+	button.btn {
+		display: none;
+	}
+	a[href]:after {
+    content: "";
+  }
+  .container {
+  	width: 100%;
+  }
+  body {
+  	margin: 1cm;
+  }
+}
+// ----------end for print
